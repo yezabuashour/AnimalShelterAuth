@@ -19,11 +19,9 @@ app.use(auth(config));
 
 // req.isAuthenticated is provided from the auth router
 app.get('/', (req, res) => {
-    res.redirect('http://localhost:3000/test');
+    res.redirect('http://localhost:3000/');
 //   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out')
 });
-
-app.get
 
 const listener = app.listen(process.env.PORT || 1812, () => {
     console.log('Your app is listening on port ' + listener.address().port)
